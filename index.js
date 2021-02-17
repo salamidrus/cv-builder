@@ -14,7 +14,7 @@ app.use(express.json());
 
 // PDF Generator
 app.post("/create-pdf", (req, res) => {
-  pdf.create(pdfTemplate(req.body), {}).toFile("Resume.pdf"),
+  pdf.create(pdfTemplate(req.body), {}).toFile("CV.pdf"),
     (err) => {
       if (err) {
         res.send(Promise.reject());
@@ -24,4 +24,9 @@ app.post("/create-pdf", (req, res) => {
       res.send(Promise.resolve());
       console.log("Success");
     };
+});
+
+// Send pdf to client
+app.get("/fetch-pdf", (req, res) => {
+  res.sendFile(`${__dirname}/CV.pdf`);
 });
