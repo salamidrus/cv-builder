@@ -17,10 +17,8 @@ class Extras extends Component {
     const data = this.props.values;
 
     axios
-      .post("http://localhost:5000/create-pdf", data)
-      .then(() =>
-        axios.get("http://localhost:5000/fetch-pdf", { responseType: "blob" })
-      )
+      .post("/create-pdf", data)
+      .then(() => axios.get("/fetch-pdf", { responseType: "blob" }))
       .then((res) => {
         const pdfBlob = new Blob([res.data], { type: "application/pdf" });
         saveAs(pdfBlob, "CV.pdf");
