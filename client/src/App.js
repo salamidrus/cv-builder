@@ -1,4 +1,5 @@
 import "./App.css";
+import UserForm from "./components/UserForm";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         </p>
         <hr />
       </div>
+      <UserForm />
     </div>
   );
 }

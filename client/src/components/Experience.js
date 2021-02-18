@@ -138,7 +138,11 @@ class Experience extends Component {
           </div>
           <br />
           <div className="container text-center">
-            <button type="button" className="btn btn-info" onClick={this.back}>
+            <button
+              type="button"
+              className="btn btn-info mr-2"
+              onClick={this.back}
+            >
               <i className="fas fa-angle-left mr-1"></i>Back
             </button>
             <button type="submit" className="btn btn-info">
@@ -151,3 +155,5 @@ class Experience extends Component {
     );
   }
 }
+
+export default Experience;
