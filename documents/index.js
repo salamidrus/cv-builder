@@ -33,6 +33,13 @@ module.exports = ({
   extra_4,
   extra_5,
 }) => {
+  let linkedInBlock = linkedin
+    ? `<p class="lead"><strong>LinkedIn:</strong> ${linkedin}</p>`
+    : "";
+  let githubBlock = github
+    ? `<p class="lead"><strong>Github:</strong> ${github}</p>`
+    : "";
+
   return `
       <!doctype html>
       <html>
@@ -73,8 +80,8 @@ module.exports = ({
                   <h1><b>${name}</b></h1>
                   <p class="lead email"><strong>Email:</strong> ${email}</p>
                   <p class="lead"><strong>Contact:</strong> (+91)${phone}</p>
-                  <p class="lead"><strong>LinkedIn:</strong> ${linkedin}</p>
-                  <p class="lead"><strong>Github:</strong> ${github}</p>
+                  ${linkedInBlock}
+                  ${githubBlock}
               </div>    
           </div>
         

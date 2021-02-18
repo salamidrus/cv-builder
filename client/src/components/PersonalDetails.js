@@ -25,7 +25,7 @@ class PersonalDetails extends Component {
                 className="form-control"
                 onChange={handleChange}
                 defaultValue={values.status === 1 ? "" : values.name}
-                // required
+                required
               />
             </div>
             <div className="col-lg-4 text-left">
@@ -36,7 +36,7 @@ class PersonalDetails extends Component {
                 className="form-control"
                 onChange={handleChange}
                 defaultValue={values.status === 1 ? "" : values.email}
-                // required
+                required
               />
             </div>
             <div className="col-lg-4 text-left">
@@ -47,7 +47,7 @@ class PersonalDetails extends Component {
                 className="form-control"
                 onChange={handleChange}
                 defaultValue={values.status === 1 ? "" : values.phone}
-                // required
+                required
               />
             </div>
           </div>
@@ -86,6 +86,7 @@ class PersonalDetails extends Component {
                 className="form-control"
                 defaultValue={values.status === 1 ? "" : values.skills}
                 onChange={handleChange}
+                required
               />
             </div>
           </div>
