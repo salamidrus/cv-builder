@@ -38,7 +38,7 @@ class Experience extends Component {
                 className="form-control"
                 defaultValue={values.status === 1 ? "" : values.exp1_org}
                 onChange={handleChange}
-                required
+                // required
               />
             </div>
             <div className="col-lg-4 text-left">
@@ -49,7 +49,7 @@ class Experience extends Component {
                 className="form-control"
                 defaultValue={values.status === 1 ? "" : values.exp1_pos}
                 onChange={handleChange}
-                required
+                // required
               />
             </div>
             <div className="col-lg-4 text-left">
@@ -60,7 +60,7 @@ class Experience extends Component {
                 className="form-control"
                 defaultValue={values.status === 1 ? "" : values.exp1_dur}
                 onChange={handleChange}
-                required
+                // required
               />
             </div>
           </div>
@@ -73,7 +73,7 @@ class Experience extends Component {
                 className="form-control"
                 defaultValue={values.status === 1 ? "" : values.exp1_desc}
                 onChange={handleChange}
-                required
+                // required
               />
             </div>
           </div>
@@ -97,7 +97,7 @@ class Experience extends Component {
                 className="form-control"
                 defaultValue={values.status === 1 ? "" : values.exp2_org}
                 onChange={handleChange}
-                required
+                // required
               />
             </div>
             <div className="col-lg-4 text-left">
@@ -108,7 +108,7 @@ class Experience extends Component {
                 className="form-control"
                 defaultValue={values.status === 1 ? "" : values.exp2_pos}
                 onChange={handleChange}
-                required
+                // required
               />
             </div>
             <div className="col-lg-4 text-left">
@@ -119,7 +119,7 @@ class Experience extends Component {
                 className="form-control"
                 defaultValue={values.status === 1 ? "" : values.exp2_dur}
                 onChange={handleChange}
-                required
+                // required
               />
             </div>
           </div>
@@ -132,7 +132,7 @@ class Experience extends Component {
                 className="form-control"
                 defaultValue={values.status === 1 ? "" : values.exp2_desc}
                 onChange={handleChange}
-                required
+                // required
               />
             </div>
           </div>

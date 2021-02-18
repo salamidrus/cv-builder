@@ -14,16 +14,15 @@ app.use(express.json());
 
 // PDF Generator
 app.post("/create-pdf", (req, res) => {
-  pdf.create(pdfTemplate(req.body), {}).toFile("CV.pdf"),
-    (err) => {
-      if (err) {
-        res.send(Promise.reject());
-        console.log(err);
-      }
+  pdf.create(pdfTemplate(req.body), {}).toFile("CV.pdf", (err) => {
+    if (err) {
+      res.send(Promise.reject());
+      console.log(err);
+    }
 
-      res.send(Promise.resolve());
-      console.log("Success");
-    };
+    res.send(Promise.resolve());
+    console.log("Success");
+  });
 });
 
 // Send pdf to client
