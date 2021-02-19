@@ -36,7 +36,7 @@ class Project extends Component {
                 className="form-control"
                 defaultValue={values.status === 1 ? "" : values.proj1_title}
                 onChange={handleChange}
-                // required
+                required
               />
             </div>
             <div className="col-lg-6 text-left">
@@ -59,7 +59,7 @@ class Project extends Component {
                 className="form-control"
                 defaultValue={values.status === 1 ? "" : values.proj1_desc}
                 onChange={handleChange}
-                // required
+                required
               />
             </div>
           </div>
@@ -83,7 +83,7 @@ class Project extends Component {
                 className="form-control"
                 defaultValue={values.status === 1 ? "" : values.proj2_title}
                 onChange={handleChange}
-                // required
+                required
               />
             </div>
             <div className="col-lg-6 text-left">
@@ -106,7 +106,7 @@ class Project extends Component {
                 className="form-control"
                 defaultValue={values.status === 1 ? "" : values.proj2_desc}
                 onChange={handleChange}
-                // required
+                required
               />
             </div>
           </div>

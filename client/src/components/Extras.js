@@ -45,7 +45,7 @@ class Extras extends Component {
                 className="form-control"
                 defaultValue={values.status === 1 ? "" : values.extra_1}
                 onChange={handleChange}
-                // required
+                required
               />
               <label htmlFor="extra_1">Languages</label>
             </div>
@@ -56,7 +56,7 @@ class Extras extends Component {
                 className="form-control"
                 defaultValue={values.status === 1 ? "" : values.extra_2}
                 onChange={handleChange}
-                // required
+                required
               />
               <label htmlFor="extra_2">Hobbies</label>
             </div>
@@ -71,7 +71,7 @@ class Extras extends Component {
                 className="form-control"
                 defaultValue={values.status === 1 ? "" : values.extra_3}
                 onChange={handleChange}
-                // required
+                required
               />
               <label htmlFor="extra_3">Activity/Achievement</label>
             </div>
@@ -83,7 +83,7 @@ class Extras extends Component {
                 className="form-control"
                 defaultValue={values.status === 1 ? "" : values.extra_4}
                 onChange={handleChange}
-                // required
+                required
               />
               <label htmlFor="extra_4">Activity/Achievement</label>
             </div>
@@ -98,7 +98,7 @@ class Extras extends Component {
                 className="form-control"
                 defaultValue={values.status === 1 ? "" : values.extra_5}
                 onChange={handleChange}
-                // required
+                required
               />
               <label htmlFor="extra_5">Activity/Achievement</label>
             </div>

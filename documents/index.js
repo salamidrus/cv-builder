@@ -40,6 +40,14 @@ module.exports = ({
     ? `<p class="lead"><strong>Github:</strong> ${github}</p>`
     : "";
 
+  let schoolBlock =
+    edu2_school && edu2_desc && edu2_qualification && edu2_year
+      ? `<div class="col-lg-8 mx-auto">
+  <p class="lead"><b>${edu2_school}</b> (${edu2_qualification}, ${edu2_year})</p>
+  <p class="mt-0">${edu2_desc}</p>
+</div>`
+      : "";
+
   return `
       <!doctype html>
       <html>
@@ -66,7 +74,7 @@ module.exports = ({
                   margin-bottom: 0;    
                 }
                 body{
-                  font-family: 'Garamond';
+                  font-family: 'Roboto';
                 }
               </style>
           
@@ -79,14 +87,14 @@ module.exports = ({
               <div class="col-lg-6">
                   <h1><b>${name}</b></h1>
                   <p class="lead email"><strong>Email:</strong> ${email}</p>
-                  <p class="lead"><strong>Contact:</strong> (+91)${phone}</p>
+                  <p class="lead"><strong>Contact:</strong> (+62)${phone}</p>
                   ${linkedInBlock}
                   ${githubBlock}
               </div>    
           </div>
         
           <hr/>
-          <div class="col-lg-8 mx-auto bg-light">
+          <div class="col-lg-8 mx-auto p-2 bg-light">
                 <h3><b>Skills</b></h3>
           </div>
           <div class="col-lg-8 row mx-auto">
@@ -94,7 +102,7 @@ module.exports = ({
           </div>
   
           
-          <div class="col-lg-8 mx-auto bg-light">
+          <div class="col-lg-8 mx-auto p-2 bg-light">
                 <h3><b>Experience</b></h3>
           </div>
           <div class="col-lg-8 mx-auto">
@@ -107,7 +115,7 @@ module.exports = ({
           </div>
   
           
-          <div class="col-lg-8 mx-auto bg-light">
+          <div class="col-lg-8 mx-auto p-2 bg-light">
                 <h3><b>Projects</b></h3>
           </div>
           <div class="col-lg-8 mx-auto">
@@ -120,22 +128,19 @@ module.exports = ({
           </div>
   
   
-          <div class="col-lg-8 mx-auto bg-light">
+          <div class="col-lg-8 mx-auto p-2 bg-light">
                 <h3><b>Education</b></h3>
           </div>
           <div class="col-lg-8 mx-auto">
                 <p class="lead"><b>${edu1_school}</b> (${edu1_qualification}, ${edu1_year})</p>
                 <p class="mt-0">${edu1_desc}</p>
           </div>
-          <div class="col-lg-8 mx-auto">
-                <p class="lead"><b>${edu2_school}</b> (${edu2_qualification}, ${edu2_year})</p>
-                <p class="mt-0">${edu2_desc}</p>
-          </div>
+          ${schoolBlock}      
   
-          <div class="col-lg-8 mx-auto bg-light">
+          <div class="col-lg-8 mx-auto p-2 bg-light">
                 <h3><b>Extra-Curriculars/Activities</b></h3>
           </div>
-          <div class="col-lg-8 mx-auto">
+          <div class="col-lg-8 mx-auto p-2">
                 <ul>
                   <li><p class="lead"><b>Languages: </b>${extra_1} </p></li>
                   <li><p class="lead"><b>Hobbies: </b>${extra_2} </p></li>

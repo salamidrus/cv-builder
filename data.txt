@@ -1,0 +1,40 @@
+// Personal details
+M Idrus Salam
+idrus@mail.com
+85248232
+
+salamidrus
+salamidrus
+
+Software Development, Project Management
+
+MHC Asia
+Backend Developer
+1 Year
+Built a web-based application using NodeJS, Express, MongoDB
+
+Glints
+Backend Developer Student
+4 months
+Backend Developer Bootcamp
+
+
+CV Builder
+cv-builder-project.herokuapp.com
+a simple cv builder
+
+Peka AI
+peka-ai.herokuapp.com
+AI Chatbot for health
+
+Bakrie University
+4
+Bachelor
+Industrial Engineering Major
+
+English
+Coding
+
+Committee of Coding Competition (2017)
+Head of Coding Department (2017)
+Member of Coding Organization (2016)

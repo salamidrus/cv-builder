@@ -37,7 +37,7 @@ export default class Education extends Component {
                 className="form-control"
                 defaultValue={values.status === 1 ? "" : values.edu1_school}
                 onChange={handleChange}
-                // required
+                required
               />
             </div>
             <div className="col-lg-4 text-left">
@@ -48,7 +48,7 @@ export default class Education extends Component {
                 className="form-control"
                 defaultValue={values.status === 1 ? "" : values.edu1_year}
                 onChange={handleChange}
-                // required
+                required
               />
             </div>
             <div className="col-lg-4 text-left">
@@ -61,7 +61,7 @@ export default class Education extends Component {
                   values.status === 1 ? "" : values.edu1_qualification
                 }
                 onChange={handleChange}
-                // required
+                required
               />
             </div>
           </div>
@@ -74,7 +74,7 @@ export default class Education extends Component {
                 className="form-control"
                 defaultValue={values.status === 1 ? "" : values.edu1_desc}
                 onChange={handleChange}
-                // required
+                required
               />
             </div>
           </div>
